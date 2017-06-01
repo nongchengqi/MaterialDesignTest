@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:transitionName="image"
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:transitionName="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:text="这是一个美丽的图片，它代表着春天活力的青春，夏天甜蜜的邂逅，秋天深情的告白，冬天温情的拥抱"
+        />
+
+</LinearLayout>
