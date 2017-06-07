@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         ct.setRepeatTime(5000);
         ct.setTextTransitionColor(Color.parseColor("#FF1E88E5"),Color.parseColor("#FF1EC7E5"));
     }
-
     public void changeFragment(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Scene scene = Scene.getSceneForLayout((ViewGroup) findViewById(R.id.container),R.layout.fragment_blan_fragment2,this);
