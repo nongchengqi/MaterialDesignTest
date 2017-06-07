@@ -1,15 +1,16 @@
 package cn.small_qi.transitiontest;
 
+import android.graphics.Color;
 import android.os.Build;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.ChangeBounds;
 import android.transition.Scene;
-import android.transition.Transition;
 import android.transition.TransitionManager;
-import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+
+import cn.small_qi.transitiontest.diyview.ColorEditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
             ChangeBounds bounds = new ChangeBounds();
             bounds.setDuration(1500);
         }
+        ColorEditText ct = (ColorEditText) findViewById(R.id.colorEt);
+        ct.setRepeatTime(5000);
+        ct.setTextTransitionColor(Color.parseColor("#FF1E88E5"),Color.parseColor("#FF1EC7E5"));
     }
 
     public void changeFragment(){
