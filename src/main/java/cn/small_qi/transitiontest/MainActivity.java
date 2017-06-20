@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public void changeFragment(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Scene scene = Scene.getSceneForLayout((ViewGroup) findViewById(R.id.container),R.layout.fragment_blan_fragment2,this);
+            //布局转换
             TransitionManager.go(scene,new ChangeBounds());
         }
     }
